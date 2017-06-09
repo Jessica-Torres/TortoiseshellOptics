@@ -99,7 +99,7 @@ header .flex {
 }
 
 /* Footer -----------------------------------------------*/
-footer {
+.footer-container {
   background-color: azure;
   padding: 4rem 4rem;
   display: flex;
