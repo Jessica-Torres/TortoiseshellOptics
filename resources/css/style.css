@@ -99,9 +99,13 @@ header .flex {
 }
 
 /* Footer -----------------------------------------------*/
-.footer-container {
+footer {
   background-color: azure;
+  padding: 4rem 4rem;
+  display: flex;
+  align-items: center;
 }
 footer img {
   height: 1.5rem;
+  padding-right: 1rem;
 }
