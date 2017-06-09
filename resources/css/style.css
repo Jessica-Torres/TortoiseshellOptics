@@ -38,6 +38,9 @@ nav li {
   display: inline-block;
   padding: 1rem 2rem;
 }
+.mobile-nav {
+  display: none;
+}
 header .flex {
   justify-content: flex-end;
 }
@@ -47,12 +50,13 @@ header .flex {
 .main-banner {
   background-color: white;
   padding: 1.5rem 5rem;
-  display: inline-block;
   margin-top: 10rem;
   margin-right: -2rem;
+}
+.main-banner h1 {
+  font-size: 2rem;
   line-height: 1.2;
   font-weight: bold;
-  font-size: 2rem;
 }
 
 /* Service Section ----------------------------------*/
@@ -111,7 +115,10 @@ footer img {
 }
 
 /* Tablet Query ----------------------------------------*/
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
   header {
     padding-top: 0;
     height: 22rem;
@@ -125,6 +132,73 @@ footer img {
     font-size: 1.33rem;
   }
   .information {
+    justify-content: center;
+  }
+}
+
+/* Mobile Query ------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .nav-bar span {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  .flex {
+    display: inline-block;
+  }
+  .main-banner {
+    margin-top: 9rem;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .main-banner h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .supporting {
+    flex-direction: column;
+    margin: 3.77rem auto;
+  }
+  .service {
+    display: block;
+    margin: 0 auto 1.54rem auto;
+    font-size: 0.77rem;
+    height: auto;
+  }
+  .information {
+    display: inline-block;
+  }
+  .info {
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+  .title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .info p {
+    padding: 1rem 0;
+    font-size: 0.77rem;
+  }
+  .footer-container div {
+    display: none;
+  }
+  .footer-container {
     justify-content: center;
   }
 }
