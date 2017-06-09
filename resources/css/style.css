@@ -63,14 +63,14 @@ header .flex {
 .service {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
+  justify-content: space-between;
   margin: 3rem;
   width: 5rem;
   height: 8rem;
 }
-.exam {
+.service .exam {
   width: 3.5rem;
 }
 .service img {
@@ -79,3 +79,21 @@ header .flex {
 }
 
 /* Info Section ---------------------------------------*/
+.information {
+  display: flex;
+}
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+.title {
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+.info p {
+  padding: 1rem 0;
+}
